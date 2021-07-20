@@ -2,153 +2,273 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Menu</title>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap");
-    </style>
-    <link rel="stylesheet" href="./style/css/style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+    <title>trillo &mdash; Your all-in-one booking app</title>
   </head>
   <body>
-    <header class="header">
-      <div class="name">
-        <h1>Dragnofly</h1>
-      </div>
+    <div class="container">
+      <header class="header">
+        <img src="./img/logo.png" alt="trillo logo" class="logo" />
 
-      <div class="nav-menu">
-        <input
-          type="checkbox"
-          class="nav-checkbox"
-          name="nav-toggle"
-          id="nav-toggle"
-        />
+        <form action="#" class="search">
+          <input
+            type="text"
+            class="search__input"
+            placeholder="search hotels"
+          />
 
-        <label for="nav-toggle" class="nav-button">
-          <div class="nav-icon">
-            <div class="line top">&nbsp;</div>
-            <div class="line middle">&nbsp;</div>
-            <div class="line bottom">&nbsp;</div>
+          <button class="search__button">
+            <svg class="search__icon">
+              <use xlink:href="./img/sprite.svg#icon-magnifying-glass"></use>
+            </svg>
+          </button>
+        </form>
+
+        <nav class="user-nav">
+          <div class="user-nav__icon-box">
+            <svg class="user-nav__icon">
+              <use xlink:href="./img/sprite.svg#icon-bookmark"></use>
+            </svg>
+            <span class="user-nav__notification">7</span>
           </div>
-        </label>
+          <div class="user-nav__icon-box">
+            <svg class="user-nav__icon">
+              <use xlink:href="./img/sprite.svg#icon-chat"></use>
+            </svg>
+            <span class="user-nav__notification">13</span>
+          </div>
 
-        <div class="nav-bg">&nbsp;</div>
+          <div class="user-nav__user">
+            <img
+              src="./img/user-1.jpg"
+              alt="user photo"
+              class="user-nav__user-photo"
+            />
+            <span class="user-nav__user-name">Kevin</span>
+          </div>
+        </nav>
+      </header>
 
-        <nav class="navs">
-          <ul class="nav-list">
-            <li class="nav-items">
-              <a href="#" class="nav_links">01 Dragnofly</a>
+      <div class="content">
+        <nav class="sidebar">
+          <ul class="side-nav">
+            <li class="side-nav__item side-nav__item--active">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-home"></use>
+                </svg>
+                <span>Hotel</span>
+              </a>
             </li>
-            <li class="nav-items">
-              <a href="#" class="nav_links">02 Justiferg</a>
+
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-aircraft-take-off"></use>
+                </svg>
+                <span>Flight</span>
+              </a>
             </li>
-            <li class="nav-items">
-              <a href="#" class="nav_links">03 Mavricks</a>
+
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-key"></use>
+                </svg>
+                <span>Car Rental</span>
+              </a>
             </li>
-            <li class="nav-items">
-              <a href="#" class="nav_links">04 Predisation</a>
-            </li>
-            <li class="nav-items">
-              <a href="#" class="nav_links">05 Streidous</a>
+
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-map"></use>
+                </svg>
+                <span>Tours</span>
+              </a>
             </li>
           </ul>
+
+          <div class="legal">&copy; 2021 by Trillo. All rights reserved</div>
         </nav>
-      </div>
-    </header>
 
-    <section class="section">
-      <div class="para para-1">
-        <h2>Archana</h2>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non commodi
-          quos illum numquam suscipit vitae eligendi possimus animi atque,
-          tempore delectus culpa, voluptatem dignissimos itaque voluptatum
-          impedit natus ratione iste dolorum. Accusantium, eos, culpa iure quo
-          id delectus alias ex repudiandae hic corrupti repellat, repellendus
-          voluptates libero nesciunt nobis consequatur. Lorem ipsum dolor sit
-          amet consectetur adipisicing elit. Maxime, consequuntur. Lorem ipsum
-          dolor sit amet consectetur adipisicing elit. Assumenda maiores numquam
-          mollitia inventore quasi repellendus ab fugiat tenetur earum ratione
-          amet nisi iure dolorum quaerat, labore in. Repellendus mollitia
-          deleniti provident autem, possimus temporibus aperiam odio dolorem
-          amet obcaecati sed repellat dolore, a illum iste pariatur est esse
-          nulla culpa reiciendis optio consequuntur. Earum delectus eaque minus
-          ad optio provident commodi sequi, adipisci molestiae iusto fugiat
-          neque labore harum ratione assumenda sunt dolorum nisi, recusandae
-          expedita autem, quos tenetur obcaecati. Aspernatur repudiandae quod
-          eius optio ipsam soluta labore adipisci excepturi asperiores eaque
-          velit dicta, veniam fugiat rerum? Dolorem quisquam dicta, excepturi
-          placeat possimus sed delectus qui, fugit facere iste praesentium
-          suscipit. Facere repellat vitae deserunt. Qui hic nobis voluptatum
-          tempore non voluptatem expedita quae vero asperiores ea, ut id illum
-          cum, sit animi, et assumenda blanditiis. Veniam consequatur error
-          similique corrupti fugit, hic pariatur perferendis asperiores, rerum
-          ipsa omnis consectetur eveniet vitae repudiandae at. Exercitationem
-          dolor odit reprehenderit ut ex expedita totam dolore commodi
-          distinctio, quis maxime provident quisquam similique tenetur rerum
-          praesentium repellat inventore voluptatibus molestiae porro. Minima
-          voluptate, accusantium modi velit quibusdam dolores repellendus
-          molestias aperiam. Soluta quaerat eaque nam ad veritatis a
-          praesentium, saepe quia nulla natus. Lorem ipsum dolor sit amet,
-          consectetur adipisicing elit. At neque corporis harum provident minus
-          voluptate vel aliquam unde, aliquid ea, maxime beatae impedit magni
-          atque rerum quia. Doloremque non provident magnam nisi tenetur
-          repellendus nesciunt reiciendis blanditiis possimus impedit in
-          maiores, quod dolorum autem sunt quibusdam culpa ut iste ab nostrum.
-          Consectetur earum cum omnis rerum iste dolores veritatis assumenda
-          quod, quasi, soluta architecto accusantium, expedita deleniti autem
-          quas sequi! Cupiditate nisi vitae veritatis, deleniti animi, libero
-          sapiente amet ipsum delectus saepe earum exercitationem placeat
-          molestiae tenetur enim? Nobis labore eum itaque excepturi dolores.
-          Labore nam illo reiciendis cupiditate molestiae?
-        </p>
-      </div>
+        <main class="hotel-view">
+          <div class="gallery">
+            <figure class="gallery__items">
+              <img
+                src="./img/hotel-1.jpg"
+                alt="photo of hotel 1"
+                class="gallery__photo"
+              />
+            </figure>
 
-      <div class="para para-2">
-        <h2>Ninja</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem,
-          aliquam animi? Odio, sequi! Perspiciatis, fugiat neque! Ex fugit,
-          facere sed veniam, eius nisi hic, eveniet alias aliquam laboriosam
-          eaque commodi labore. Tempore molestiae aperiam, nobis magnam
-          perspiciatis corrupti assumenda fuga ducimus ipsa dolores totam magni
-          debitis animi! Repudiandae voluptatum nemo debitis quasi, voluptatibus
-          sunt nesciunt? A at veritatis nostrum ratione! Lorem ipsum dolor sit,
-          amet consectetur adipisicing elit. Fugit, reiciendis architecto dolor
-          hic eum soluta ab molestiae ipsum quasi, repellendus saepe! Tenetur
-          nobis, in quidem eveniet quos ad iusto saepe necessitatibus, maxime
-          reprehenderit fuga sunt dicta libero reiciendis eos illum aperiam
-          nihil dolores optio repellendus tempore earum. Eligendi ut minus,
-          nostrum voluptates provident suscipit ipsa facere nihil aspernatur
-          asperiores fugit consequuntur dignissimos dolorum tempora expedita?
-          Modi soluta minus cumque, libero quos et dolor tempora voluptatibus
-          aut itaque quidem dolorem eius facere omnis repellendus commodi rem
-          cum blanditiis perferendis sint iste obcaecati neque praesentium!
-          Totam eius, sed odit consectetur iste corporis cupiditate illo quis
-          sunt libero! Nulla, reiciendis quis laborum iste quidem necessitatibus
-          perspiciatis voluptates pariatur soluta nam! Corrupti optio sed
-          molestias quibusdam eius. Non, ab. Magni quidem quas dolores totam,
-          nisi vel, maxime sed nobis nihil enim corrupti consequuntur aspernatur
-          recusandae quae qui iusto odio numquam quia aperiam distinctio
-          voluptas. Doloremque ipsa esse repudiandae adipisci voluptatibus.
-          Delectus nam cumque illum itaque accusantium enim recusandae omnis
-          dolorem unde saepe libero ab, neque similique distinctio aut, maxime
-          quae ratione, sapiente voluptatum modi. Ducimus est repellendus,
-          eveniet deserunt, ab ullam culpa sequi totam necessitatibus at quam,
-          nobis nemo! Eum eligendi hic error eaque. Lorem ipsum dolor sit amet
-          consectetur, adipisicing elit. Perferendis eius iste dolorum corporis
-          ea! Quos exercitationem est corporis recusandae a quisquam, quibusdam
-          natus quas fuga tempora quae, modi accusamus, atque eligendi et.
-          Necessitatibus molestiae mollitia ipsam inventore, doloremque quisquam
-          fugiat neque sint, voluptates consequatur explicabo aut aliquid
-          recusandae dicta debitis odio ratione numquam quod velit? Natus vel,
-          soluta, fugit delectus quos illo ab unde animi quidem error tempore
-          rerum cumque accusamus! Aliquam ipsa, corporis amet laborum a nihil
-          distinctio tempore quos quaerat perferendis ut, exercitationem quidem
-          similique molestias sit nam consectetur molestiae eaque incidunt? Sit
-          dolore modi tenetur ullam. Fugiat?
-        </p>
+            <figure class="gallery__items">
+              <img
+                src="./img/hotel-2.jpg"
+                alt="photo of hotel 2"
+                class="gallery__photo"
+              />
+            </figure>
+
+            <figure class="gallery__items">
+              <img
+                src="./img/hotel-3.jpg"
+                alt="photo of hotel 3"
+                class="gallery__photo"
+              />
+            </figure>
+          </div>
+
+          <div class="overview">
+            <h1 class="overview__heading">Hotel Las Palmas</h1>
+
+            <div class="overview__stars">
+              <svg class="overview__icon-star">
+                <!-- <use xlink:href="./img/sprite.svg#icon-star"></use> -->
+                <use xlink:href="./"></use>
+
+              </svg>
+              <svg class="overview__icon-star">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview__icon-star">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview__icon-star">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview__icon-star">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+            </div>
+
+            <div class="overview__location">
+              <svg class="overview__icon-location">
+                <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+              </svg>
+              <button class="btn-inline">New York City, USA</button>
+            </div>
+
+            <div class="overview__rating">
+              <div class="overview__rating-average">8.6</div>
+              <div class="overview__rating-count">429 votes</div>
+            </div>
+          </div>
+
+          <div class="detail">
+            <div class="description">
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Officia veritatis ex illum necessitatibus explicabo, officiis ea
+                aut amet voluptatum harum?
+              </p>
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Officia veritatis ex illum necessitatibus explicabo, officiis ea
+                aut amet voluptatum harum?
+              </p>
+              <ul class="list">
+                <li class="list__item">Close to the beach</li>
+                <li class="list__item">Breakfast included</li>
+                <li class="list__item">Free airport shuttle</li>
+                <li class="list__item">Air conditioning and heating</li>
+                <li class="list__item">Pets allowed</li>
+                <li class="list__item">We speak all languages</li>
+                <li class="list__item">Free wifi in all rooms</li>
+                <li class="list__item">Perfect for families</li>
+              </ul>
+
+              <div class="recommend">
+                <p class="recommend__count">
+                  Lucy and 3 other friends recommend this hotel
+                </p>
+                <div class="recommend_friends">
+                  <img
+                    src="./img/user-3.jpg"
+                    alt="Friend 1"
+                    class="recommend__photo"
+                  />
+                  <img
+                    src="./img/user-4.jpg"
+                    alt="Friend 2"
+                    class="recommend__photo"
+                  />
+                  <img
+                    src="./img/user-5.jpg"
+                    alt="Friend 3"
+                    class="recommend__photo"
+                  />
+                  <img
+                    src="./img/user-6.jpg"
+                    alt="Friend 4"
+                    class="recommend__photo"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="user-reviews">
+              <figure class="review">
+                <blockquote class="review__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Explicabo ullam earum fuga, culpa dignissimos sint?
+                </blockquote>
+                <figcaption class="review__user">
+                  <img
+                    src="./img/user-4.jpg"
+                    alt="User 1"
+                    class="review__photo"
+                  />
+                  <div class="review__user-box">
+                    <p class="review__user-name">Nick Smith</p>
+                    <p class="review__user-date">Feb 23rd, 2017</p>
+                  </div>
+                  <div class="review__rating">7.8</div>
+                </figcaption>
+              </figure>
+
+              <figure class="review">
+                <blockquote class="review__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Explicabo ullam earum fuga, culpa dignissimos sint?
+                </blockquote>
+                <figcaption class="review__user">
+                  <img
+                    src="./img/user-2.jpg"
+                    alt="User 1"
+                    class="review__photo"
+                  />
+                  <div class="review__user-box">
+                    <p class="review__user-name">Mary Thomas</p>
+                    <p class="review__user-date">Sept 13th, 2017</p>
+                  </div>
+                  <div class="review__rating">9.3</div>
+                </figcaption>
+              </figure>
+
+              <button class="btn-inline">Show all <span>&rarr;</span></button>
+            </div>
+          </div>
+          <div class="cta">
+            <h2 class="cta__book-now">
+              Good news! We have 4 free rooms for your selected dates!
+            </h2>
+
+            <button class="btn">
+              <span class="btn__visible">Book now</span>
+              <span class="btn__invisible">Only 4 rooms left</span>
+            </button>
+          </div>
+        </main>
       </div>
-    </section>
+    </div>
   </body>
 </html>
